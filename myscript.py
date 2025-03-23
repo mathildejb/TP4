@@ -8,4 +8,4 @@ os.system("git bisect run python manage.py test")
 print("Le premier commit défectueux est:")
 os.system("git show --quiet $(git bisect log | grep 'first bad commit' -A 1 | tail -n 1)")
 
-os.sytem("git bisect reset")
+os.system("git bisect reset")
